@@ -1,11 +1,29 @@
 {
-    "version": 2,
+    "rewrites": [
+      {
+        "source": "/",
+        "destination": "/index.html"
+      }
+    ],
     "builds": [
-      { "src": "api/call-gemini.js", "use": "@vercel/node" },
-      { "src": "frontend/", "use": "@vercel/static" }
+      {
+        "src": "frontend/**",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "api/**/*.js",
+        "use": "@vercel/node"
+      }
     ],
     "routes": [
-      { "src": "/api/call-gemini", "dest": "api/call-gemini.js" },
-      { "src": "/(.*)", "dest": "/frontend/$1" }
+      {
+        "src": "/api/(.*)",
+        "dest": "/api/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/frontend/$1"
+      }
     ]
   }
+  
