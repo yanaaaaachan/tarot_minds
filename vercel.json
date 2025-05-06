@@ -1,8 +1,30 @@
 {
     "version": 2,
     "builds": [
-      { "src": "api/call-gemini.js", "use": "@vercel/node" },
-      { "src": "./", "use": "@vercel/static" }
+      {
+        "src": "api/call-gemini.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "index.html",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "tarot.html",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "result.html",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "home.css",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "home.js",
+        "use": "@vercel/static"
+      }
     ],
     "routes": [
       { "src": "/api/call-gemini", "dest": "api/call-gemini.js" },
