@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "api/call-gemini.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+      { "src": "/api/call-gemini", "dest": "api/call-gemini.js" }
+    ]
+  }
