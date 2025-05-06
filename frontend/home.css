@@ -1,6 +1,6 @@
 
 body{
-    background-image: url(home_background.jpg) ;
+    background-image: url(../frontend/home_background.jpg) ;
     background-size:100%; 
     color:rgba(250, 231, 84, 0.916);
     overflow: hidden;
@@ -11,7 +11,7 @@ body{
 }
 @media screen and (max-width: 1000px) {
     body{
-        background-image: url(mobile_background.jpg);
+        background-image: url(//.frontend/mobile_background.jpg);
     }
 }
 
@@ -237,7 +237,7 @@ body{
 }
 
 .result_body{
-    background-image: url(result_img.jpg) ;
+    background-image: url(../frontend/result_img.jpg) ;
     background-size:100%; 
     color:rgba(246, 233, 136, 0.916);
     overflow:scroll;
@@ -248,7 +248,7 @@ body{
 }
 @media screen and (max-width: 1000px) {
     .result_body{
-        background-image: url(mobile_background.jpg) ;
+        background-image: url(../frontend/mobile_background.jpg) ;
     }
 }
 .yourcard_is{
